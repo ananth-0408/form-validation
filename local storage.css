@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: linear-gradient(to top, #00aaff, #80d4ff);
+}
+
+.createAccDiv {
+	min-width: 500px;
+	max-width: 600px;
+	box-shadow: 10px 10px 15px gray;
+	padding: 0px 25px 30px 25px;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -30%);
+	font-size: 0.95rem;
+	background: white;
+}	
+
+.createAccHeading {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	font-weight: 500;
+	border-bottom: .5px solid gray;
+}
+
+.bizLogo {
+	font-size: 0.7rem;
+	font-weight: 400;
+	position: relative;
+	left: 40%;
+	text-decoration: underline;
+}
+
+.createAccBody {
+	margin-top: 40px;
+}
+
+.createAccBody input {
+	width: 90%;
+	margin-left: 5%;
+	font-size: 0.9rem;
+	margin: 15px 5%;
+}
+
+.alert-info {
+	height: 25px;
+	width: 250px;
+	position: absolute;
+	top: -25%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mockATag {
+	text-decoration: underline;
+}
+
+.loginDiv {
+	display: none;
+}
+
+@keyframes alertAccCreated {
+	0% {top: -25%;}
+	100% {top: 0%;}
+}
+
+@keyframes alertAccCreatedDisappear {
+	0% {top: 0%;}
+	100% {top: -25%;}
+}
+
+@keyframes createAccDivFade {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes loginDivFade {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.navHeadAnanth {
+	width: 100%;
+	height: 45px;
+	background-color: black;
+	padding: 0px 30px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ananthMenu {
+	color: white;
+	height: 30px;
+}
+
+.ananthMenuDropdown {
+	width: 400px;
+	padding: 8px 20px;
+	background-color: white;
+	position: relative;
+	top: -5px;
+	left: 95%;
+	transform: translateX(-95%);
+	border: .5px solid gray;
+	opacity: 0;
+}
+
+@keyframes ananthMenuDropdown {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes ananthMenuDropdownOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.appMain {
+	opacity: 0;
+	display: none;
+}
+
+.learnHtmL {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.learnHtmL p {
+	color: white;
+	font-weight: 900;
+	font-size: 2rem;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	letter-spacing: 2px;
+	margin-top: 10px;
+}
+
+.learnHtmL span{
+	position: relative;
+	left: 1.5%;
+	top: 14%;
+	font-size: 1.2rem;
+	color: rgb(230, 230, 230);
+}
+
+.learnHtmL .btn {
+	height: 40px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 0.9rem;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+
+.learnHtmL .btn-warning {
+	top: 43%;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.modal-content {
+	font-family: 'Lato', sans-serif;
+}
+
+.modal input {
+	width: 90%;
+	margin-left: 5%;
+	background-color: white;
+}
+
+.modal .btn,
+.modal input {
+	font-size: 0.9rem;
+}
+
+.alert-warning {
+	width: 500px;
+	padding: 10px 15px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+	font-size: 0.8em !important;
+}
+
+.alert-warning .btn-close {
+	float: right;
+}
+
+@keyframes MyBtstrp {
+	0% {opacity: 0;}
+	100% {opacity: 1; margin-top: 30px;}
+}
+
+#staticBackdrop {
+	padding-top: 15px;
+}
+
+.myBackdrop {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	width: 100vw;
+}
+
+.myBackdrop .btn {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes modalCloseAn {
+	0% {opacity: 1; margin-top: 30px;}
+	100% {opacity: 0;}
+}
+
+.bagde::after {
+	content: '';
+	display: block;
+	height: 15px;
+	width: 15px;
+	border: none;
+	background-color: #ff0000;
+	border-radius: 50%;
+	position: relative;
+	top: -33px;
+	right: -18px;
+}
+
+.par1, .par2 {
+	height: 100vh;
+	width: 100vw;
+}
+
+.ex1 {
+	margin: 20px;
+	padding-bottom: 30px;
+	width: 80vw;
+	background-color: rgb(235, 235, 235);
+	font-family: 'Lato', sans-serif;
+}
+
+.ex1H {
+	padding: 20px 20px;
+}
+
+.code {
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: white;
+	border-width: 0px 0px 0px 3px;
+	border-style: solid;
+	border-color: #00c44b;
+	padding: 10px 15px;
+	font-size: 0.9rem;
+}
+
+.red {color: red;}
+.brown {color: brown;}
+.openNclose {color: blue;}
+
+.tryNow {
+	margin: 10px 20px;
+	position: relative;
+	top: 15px;
+}
