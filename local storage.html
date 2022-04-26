@@ -1,120 +1,15 @@
-<html lang="en">
+<html>
 	<head>
-		<title> Create Acc </title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="local storage.css">
+		<title>Create An Account</title>
 	</head>
 	<body>
-		<div class="alert alert-warning alertExists fade show"><div class="clickableArea">An account with this name already exists. <span class="alert-link loginExists">Login</span></div> <button class="btn-close btn" data-bs-dismiss="alert"></button></div>
-		<div class="alert alert-info">
-			<div class="innerTextYay">Account created! <span class="alert-link mockATag">Log in </span></div>
-		</div>
-		<div class="createAccDiv">
-			<div class="createAccHeading">
-				Create Account <span class="bizLogo"> LearnToCode@me </span>
-			</div>
-			<div class="createAccBody">
-				<form class="row g-3 needs-validation" novalidate>
-					<input type="text" class="form-control usernamee" id="validationCustom01" placeholder="Username">
-					<input type="email" class="form-control emaill" id="validationCustom01" placeholder="Email ID" required>
-					<input type="password" class="form-control passwordd" id="validationCustom01" placeholder="Password">
-					<button class="btn btn-primary submitbtn">Submit</button>
-					<div class="invalid-feedback">One or more fields seem to be empty. Please fill them up.</div>
-				</form>
-			</div>
-		</div>
-
-		<div class="createAccDiv loginDiv">
-			<div class="createAccHeading loginDivHead">
-				Login <span class="bizLogo"> LearnToCode@me </span>
-			</div>
-			<div class="createAccBody loginDivBody">
-				<form class="row g-3 needs-validation" novalidate>
-					<input type="text" class="form-control usernameee" id="validationCustom01" placeholder="Username">
-					<input type="password" class="form-control passworddd" id="validationCustom01" placeholder="Password">
-					<span class="link link-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Forgot password?</span>
-					<button class="btn btn-primary loginSubmitBtn" type="button">Submit</button>
-					<div class="invalid-feedback errMsgg">One or more fields seem to be empty. Please fill them up.</div>
-				</form>
-			</div>
-		</div>
-
-		<!--main-->
-			<div class="appMain">
-				<div class="par1">
-				<div class="navHeadAnanth">
-					LearnToCode() <img src="menu_white_24dp.svg" class="ananthMenu bagde">
-				</div>
-				<div class="ananthMenuDropdown">
-					There's <a href="" class="link link-info">more to see</a> in your account!
-				</div>
-				<div class="learnHtmL">
-					<p> HTML</p><br>
-					<span>The language for building web pages </span><br>
-					<button class="btn btn-danger rounded-pill learnNow">Learn now</button>
-					<button class="btn btn-warning rounded-pill">Watch Video</button>
-				</div>
-				</div>
-				<div class="par2" id="par2">
-					<div class="ex1">
-						<h2 class="ex1H"> Example </h2>
-						<div class="code">
-							<span class="openNclose">&#60;</span><span class="brown">!DOCTYPE</span> <span class="red">html</span><span class="openNclose">&#62;</span><br>
-							&nbsp; &nbsp; <span class="openNclose">&#60;</span><span class="brown">head</span><span class="openNclose">&#62;</span><br>
-							&nbsp; &nbsp; &nbsp; &nbsp; <span class="openNclose">&#60;</span><span class="brown">title</span><span class="openNclose">&#62;</span>My First HTML document! <span class="openNclose">&#60;/</span><span class="brown">title</span><span class="openNclose">&#62;</span><br>
-							&nbsp; &nbsp; <span class="openNclose">&#60;/</span><span class="brown">head</span><span class="openNclose">&#62;</span><br>
-							&nbsp; &nbsp; <span class="openNclose">&#60;</span><span class="brown">body</span><span class="openNclose">&#62;</span><br>
-							&nbsp; &nbsp; &nbsp; &nbsp; <span class="openNclose">&#60;</span><span class="brown">h1</span><span class="openNclose">&#62;</span> HTML Heading! <span class="openNclose">&#60;/</span><span class="brown">h1</span><span class="openNclose">&#62;</span><br>
-							&nbsp; &nbsp; &nbsp; &nbsp; <span class="openNclose">&#60;</span><span class="brown">p</span><span class="openNclose">&#62;</span> HTML paragraph! <span class="openNclose">&#60;/</span><span class="brown">p</span><span class="openNclose">&#62;</span><br>
-							&nbsp; &nbsp; <span class="openNclose">&#60;/</span><span class="brown">body</span><span class="openNclose">&#62;</span><br>
-							<span class="openNclose">&#60;/</span><span class="brown">html</span><span class="openNclose">&#62;</span>
-							
-						</div>
-						<a class="btn btn-info tryNow" href="http://localhost:2435/storage/emulated/0/HTML/Random/w3schools.html" role="button">Try it now!</a>
-					</div>
-				</div>
-			</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h6 class="modal-title" id="exampleModalLabel">Show Password</h6>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-		<label class="labelShowPs">Password:</label>
-		<input type="text" class="form-control passShow" value="" readonly>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Gotcha!</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-	<!-- Button trigger modal -->
-
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body puddinghe">
-		Want a profile picture for your account? Paste the url of your image here:<br><br>
-        <input class="form-control urlInput" type="url" />
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary closePfp" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary uploadPfp" data-bs-dismiss="modal" aria-label="Close">Upload</button>
-      </div>
-    </div>
-  </div>
-</div>
+		<script>
+			window.onload = () => {
+				setTimeout(rickRoll, 2000);
+			}
+			function rickRoll() {
+				location.url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+			}
+		</script>
 	</body>
-	<script src="local storage.js"></script>
-</html>	
+</html>
